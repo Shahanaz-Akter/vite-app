@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Aladin Shop | Online Shopping In Bangladesh With Home Delivery</title>
+    <meta name="robots" content="all">
+    <meta name="keywords" content="Online Shopping In Bangladesh With Home Delivery">
+    <meta name="description" content="Online Shopping In Bangladesh With Home Delivery">
+    <meta property="og:url" content="https://aladinshopbd.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aladin Shop">
+    <meta property="og:description" content="Online Shopping In Bangladesh With Home Delivery">
+    <meta property="og:image" content="https://aladinshopbd.com/storage/logo.png">
+    <meta property="og:image:secure_url" content="https://aladinshopbd.com/storage/logo.png">
+    <meta property="og:description" content="Online Shopping In Bangladesh With Home Delivery">
+    <link rel="icon" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/logo.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/logo.png">
+    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/fontawesome.min.css">
+    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/slick.min.css">
+    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/all.css">
+    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/custom.css">
+
+    <!-- react link -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+
+   
+    <!-- Meta Pixel Code -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=714003553363567&ev=PageView&noscript=1"
+/></noscript>
+
+<!-- End Meta Pixel Code -->
+<style>
+    :root { --primary: #d7282b!important; } .navbar-part { background: var(--primary); } .navbar-link,.dropdown-arrow::before,.navbar-link:hover,.dropdown-arrow:hover::before{ color:white; } .dropdown-position-list li a:hover { color: var(--text); } .btn-danger { color: #fff; background-color: var(--primary); border-color: var(--primary); } .bg-success { background-color: #d7282b!important;  } @media (max-width: 991px){ .navbar-link,.dropdown-arrow::before,.navbar-link:hover,.dropdown-arrow:hover::before{ color: var(--text); width: 100%; } }
+</style>
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- script assets  -->
+    <script data-pagespeed-no-defer="" src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/jquery-1.12.4.min.js.download"></script>
+    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/bootstrap.min.js.download"></script>
+    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/slick.min.js.download"></script>
+    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/main.js.download"></script>
+    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/sweet-alert.min.js.download"></script>
+    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/blazy.min.js.download"></script>
+    
+    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/livewire.js.download" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'NwJkRLVcx1UnwfetgtxObbbNnHx0bkI9TGJESYal';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+    
+    <script>
+            function addToCart(id,title,price){
+    
+                $.ajax({
+                    url: "https://aladinshopbd.com/api/capi",
+                    type: "GET",
+                    data: {
+                        'track' : "track",
+                        'event' : "AddToCart",
+                        'current_url' : "https://aladinshopbd.com",
+                        'client_ip_address' : "103.89.240.246",
+                        'data' : {
+                            'content_name': title,
+                            'content_ids': id,
+                            'content_type' : 'product',
+                            'currency' : 'BDT',
+                            'contents': [
+                                {
+                                    'id':id,
+                                    'title' : title,
+                                    'item_price' : price,
+                                    'quantity' : 1,
+                                }
+                            ],
+                            'value' : price,
+                            'num_items': 1,
+                            'event_url' : "https://aladinshopbd.com",
+                        },
+                        "eventID": "AddToCart.1.1725267544",
+                        "event_id": "AddToCart.1725267544",
+                    },
+                    success: (function (data) {
+                        fbq('track', 'AddToCart', data, { eventID: data.event_id });
+                        console.log('AddToCart server event run successfully');
+                    })
+                });
+            }
+            
+            function orderNow(id,title,price){
+    
+               
+                $.ajax({
+                    url: "https://aladinshopbd.com/api/capi",
+                    type: "GET",
+                    data: {
+                        'track' : "track",
+                        'event' : "AddToCart",
+                        'current_url' : "https://aladinshopbd.com",
+                        'client_ip_address' : "103.89.240.246",
+                        'data' : {
+                            'content_name': title,
+                            'content_ids': id,
+                            'content_type' : 'product',
+                            'currency' : 'BDT',
+                            'contents': [
+                                {
+                                    'id':id,
+                                    'title' : title,
+                                    'item_price' : price,
+                                    'quantity' : 1,
+                                }
+                            ],
+                            'value' : price,
+                            'num_items': 1,
+                            'event_url' : "https://aladinshopbd.com",
+                        },
+                        "eventID": "AddToCart.1.1725267544",
+                        "event_id": "AddToCart.1725267544",
+                    },
+                    success: (function (data) {
+                        fbq('track', 'AddToCart', data, { eventID: data.event_id });
+                        console.log('AddToCart server event run successfully');
+                    })
+                });
+            }
+    
+            
+        window.addEventListener('swal:modal', event => {
+            swal({
+                title: event.detail.message,
+                text: event.detail.text,
+                icon: event.detail.type,
+                timer:800,
+            });
+        });
+    </script>
+  </body>
+</html>
