@@ -1,143 +1,309 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Aladin Shop | Online Shopping In Bangladesh With Home Delivery</title>
+    <!-- custom css -->
     <meta name="robots" content="all">
     <meta name="keywords" content="Online Shopping In Bangladesh With Home Delivery">
     <meta name="description" content="Online Shopping In Bangladesh With Home Delivery">
-    <meta property="og:url" content="https://aladinshopbd.com">
+    <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Aladin Shop">
+    <meta property="og:title" content="EcommerceBdShop">
     <meta property="og:description" content="Online Shopping In Bangladesh With Home Delivery">
-    <meta property="og:image" content="https://aladinshopbd.com/storage/logo.png">
-    <meta property="og:image:secure_url" content="https://aladinshopbd.com/storage/logo.png">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:secure_url" content="">
     <meta property="og:description" content="Online Shopping In Bangladesh With Home Delivery">
-    <link rel="icon" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/logo.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/logo.png">
-    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/bootstrap.min.css">
-    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/fontawesome.min.css">
-    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/slick.min.css">
-    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/all.css">
-    <link rel="stylesheet" href="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/custom.css">
+    <title>EcommerceShopBD</title>
 
-    <!-- react link -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="icon" href=".src/assets/logo.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./src/Components/Assets/logo.png">
 
-   
+    <link rel="stylesheet" href="./src/Components/Assets/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/Components/Assets/slick.min.css">
+    <link rel="stylesheet" href="./src/Components/Assets/all.css">
+    <link rel="stylesheet" href="./src/Components/Assets/custom.css">
+
+    <style>
+        [wire\:loading],
+        [wire\:loading\.delay],
+        [wire\:loading\.inline-block],
+        [wire\:loading\.inline],
+        [wire\:loading\.block],
+        [wire\:loading\.flex],
+        [wire\:loading\.table],
+        [wire\:loading\.grid],
+        [wire\:loading\.inline-flex] {
+            display: none;
+        }
+
+        [wire\:loading\.delay\.shortest],
+        [wire\:loading\.delay\.shorter],
+        [wire\:loading\.delay\.short],
+        [wire\:loading\.delay\.long],
+        [wire\:loading\.delay\.longer],
+        [wire\:loading\.delay\.longest] {
+            display: none;
+        }
+
+        [wire\:offline] {
+            display: none;
+        }
+
+        [wire\:dirty]:not(textarea):not(input):not(select) {
+            display: none;
+        }
+
+        input:-webkit-autofill,
+        select:-webkit-autofill,
+        textarea:-webkit-autofill {
+            animation-duration: 50000s;
+            animation-name: livewireautofill;
+        }
+
+        @keyframes livewireautofill {
+            from {}
+        }
+    </style>
+
     <!-- Meta Pixel Code -->
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=714003553363567&ev=PageView&noscript=1"
-/></noscript>
+    <script src=".src/images/714003553363567" async=""></script>
+    <script async="" src=".src/assets/fbevents.js"></script>
 
-<!-- End Meta Pixel Code -->
-<style>
-    :root { --primary: #d7282b!important; } .navbar-part { background: var(--primary); } .navbar-link,.dropdown-arrow::before,.navbar-link:hover,.dropdown-arrow:hover::before{ color:white; } .dropdown-position-list li a:hover { color: var(--text); } .btn-danger { color: #fff; background-color: var(--primary); border-color: var(--primary); } .bg-success { background-color: #d7282b!important;  } @media (max-width: 991px){ .navbar-link,.dropdown-arrow::before,.navbar-link:hover,.dropdown-arrow:hover::before{ color: var(--text); width: 100%; } }
-</style>
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '714003553363567');
+        fbq('track', 'PageView');
+    </script>
+
+    <style>
+        :root {
+            /* --primary: #d7282b !important; */
+
+
+        }
+
+        .navbar-part {
+            background: var(--primary);
+        }
+
+        .navbar-link,
+        .dropdown-arrow::before,
+        .navbar-link:hover,
+        .dropdown-arrow:hover::before {
+            color: white;
+        }
+
+        .dropdown-position-list li a:hover {
+            color: var(--text);
+        }
+
+        .btn-danger {
+            color: #fff;
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .bg-success {
+            background-color: #d7282b !important;
+        }
+
+        @media (max-width: 991px) {
+
+            .navbar-link,
+            .dropdown-arrow::before,
+            .navbar-link:hover,
+            .dropdown-arrow:hover::before {
+                color: var(--text);
+                width: 100%;
+            }
+        }
+    </style>
+
 </head>
 
-  <body>
+<body data-new-gr-c-s-check-loaded="14.1193.0" data-gr-ext-installed="">
+
+    <a class="backtop fas fa-arrow-up" href="/" style="display: inline-block;"></a>
+
     <div id="root"></div>
+    <!-- main root file -->
     <script type="module" src="/src/main.jsx"></script>
 
-    <!-- script assets  -->
-    <script data-pagespeed-no-defer="" src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/jquery-1.12.4.min.js.download"></script>
-    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/bootstrap.min.js.download"></script>
-    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/slick.min.js.download"></script>
-    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/main.js.download"></script>
-    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/sweet-alert.min.js.download"></script>
-    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/blazy.min.js.download"></script>
-    
-    <script src="./Aladin Shop _ Online Shopping In Bangladesh With Home Delivery_files/livewire.js.download" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'NwJkRLVcx1UnwfetgtxObbbNnHx0bkI9TGJESYal';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-    
+    <!-- custom jss -->
+    <script data-pagespeed-no-defer="" src="./src/Components/Assets/jquery-1.12.4.min.js"></script>
+
+    <script type="" src="./src/Components/Assets/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script type="" src="./src/Components/Assets/slick.min.js"></script>
+
+    <script type="" src="./src/Components/Assets/main.min.js"></script>
+    <script type="" src="./src/Components/Assets/sweet-alert.min.js"></script>
+    <script type="" src="./src/Components/Assets/blazy.js"></script>
+    <!-- <script type="" src="./src/Components/Assets/livewire.js"></script> -->
+
+    <script data-turbo-eval="false" data-turbolinks-eval="false">
+
+        window.livewire = new Livewire();
+        window.Livewire = window.livewire;
+        window.livewire_app_url = '';
+        window.livewire_token = 'NwJkRLVcx1UnwfetgtxObbbNnHx0bkI9TGJESYal';
+        window.deferLoadingAlpine = function (callback) {
+            window.addEventListener('livewire:load', function () {
+                callback();
+
+            });
+        };
+        let started = false;
+        window.addEventListener('alpine:initializing', function () {
+            if (!started) {
+                window.livewire.start();
+                started = true;
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!started) {
+                window.livewire.start();
+                started = true;
+            }
+        });
+    </script>
+
     <script>
-            function addToCart(id,title,price){
-    
-                $.ajax({
-                    url: "https://aladinshopbd.com/api/capi",
-                    type: "GET",
-                    data: {
-                        'track' : "track",
-                        'event' : "AddToCart",
-                        'current_url' : "https://aladinshopbd.com",
-                        'client_ip_address' : "103.89.240.246",
-                        'data' : {
-                            'content_name': title,
-                            'content_ids': id,
-                            'content_type' : 'product',
-                            'currency' : 'BDT',
-                            'contents': [
-                                {
-                                    'id':id,
-                                    'title' : title,
-                                    'item_price' : price,
-                                    'quantity' : 1,
-                                }
-                            ],
-                            'value' : price,
-                            'num_items': 1,
-                            'event_url' : "https://aladinshopbd.com",
-                        },
-                        "eventID": "AddToCart.1.1725267544",
-                        "event_id": "AddToCart.1725267544",
+
+        function addToCart(id, title, price) {
+
+            $.ajax({
+                url: "api/capi",
+                type: "GET",
+                data: {
+                    'track': "track",
+                    'event': "AddToCart",
+                    'current_url': "https://aladinshopbd.com",
+                    'client_ip_address': "103.89.240.246",
+                    'data': {
+                        'content_name': title,
+                        'content_ids': id,
+                        'content_type': 'product',
+                        'currency': 'BDT',
+                        'contents': [
+                            {
+                                'id': id,
+                                'title': title,
+                                'item_price': price,
+                                'quantity': 1,
+                            }
+                        ],
+                        'value': price,
+                        'num_items': 1,
+                        'event_url': "https://aladinshopbd.com",
                     },
-                    success: (function (data) {
-                        fbq('track', 'AddToCart', data, { eventID: data.event_id });
-                        console.log('AddToCart server event run successfully');
-                    })
-                });
-            }
-            
-            function orderNow(id,title,price){
-    
-               
-                $.ajax({
-                    url: "https://aladinshopbd.com/api/capi",
-                    type: "GET",
-                    data: {
-                        'track' : "track",
-                        'event' : "AddToCart",
-                        'current_url' : "https://aladinshopbd.com",
-                        'client_ip_address' : "103.89.240.246",
-                        'data' : {
-                            'content_name': title,
-                            'content_ids': id,
-                            'content_type' : 'product',
-                            'currency' : 'BDT',
-                            'contents': [
-                                {
-                                    'id':id,
-                                    'title' : title,
-                                    'item_price' : price,
-                                    'quantity' : 1,
-                                }
-                            ],
-                            'value' : price,
-                            'num_items': 1,
-                            'event_url' : "https://aladinshopbd.com",
-                        },
-                        "eventID": "AddToCart.1.1725267544",
-                        "event_id": "AddToCart.1725267544",
+                    "eventID": "AddToCart.1.1725267544",
+                    "event_id": "AddToCart.1725267544",
+                },
+                success: (function (data) {
+                    fbq('track', 'AddToCart', data, { eventID: data.event_id });
+                    console.log('AddToCart server event run successfully');
+                })
+            });
+        }
+
+        function orderNow(id, title, price) {
+
+
+            $.ajax({
+                url: "api/capi",
+                type: "GET",
+                data: {
+                    'track': "track",
+                    'event': "AddToCart",
+                    'current_url': "https://aladinshopbd.com",
+                    'client_ip_address': "103.89.240.246",
+                    'data': {
+                        'content_name': title,
+                        'content_ids': id,
+                        'content_type': 'product',
+                        'currency': 'BDT',
+                        'contents': [
+                            {
+                                'id': id,
+                                'title': title,
+                                'item_price': price,
+                                'quantity': 1,
+                            }
+                        ],
+                        'value': price,
+                        'num_items': 1,
+                        'event_url': "https://aladinshopbd.com",
                     },
-                    success: (function (data) {
-                        fbq('track', 'AddToCart', data, { eventID: data.event_id });
-                        console.log('AddToCart server event run successfully');
-                    })
-                });
-            }
-    
-            
+                    "eventID": "AddToCart.1.1725267544",
+                    "event_id": "AddToCart.1725267544",
+                },
+                success: (function (data) {
+                    fbq('track', 'AddToCart', data, { eventID: data.event_id });
+                    console.log('AddToCart server event run successfully');
+                })
+            });
+        }
+
+
         window.addEventListener('swal:modal', event => {
             swal({
                 title: event.detail.message,
                 text: event.detail.text,
                 icon: event.detail.type,
-                timer:800,
+                timer: 800,
             });
         });
     </script>
-  </body>
+
+</body>
+
+<grammarly-desktop-integration data-grammarly-shadow-root="true">
+    <template shadowrootmode="open">
+        <style>
+            div.grammarly-desktop-integration {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border: 0;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            div.grammarly-desktop-integration:before {
+                content: attr(data-content);
+            }
+        </style>
+        <div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration"
+            data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}">
+        </div>
+    </template>
+</grammarly-desktop-integration>
+
 </html>
