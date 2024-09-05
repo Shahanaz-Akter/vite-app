@@ -1,6 +1,8 @@
-import React from "react";
-import "./Category.css";
+import React from 'react';
+import './Category.css';
 
+//for use react route with to instead of href 
+import {Link} from 'react-router-dom';
 function Category() {
   return (
     <>
@@ -24,8 +26,8 @@ function Category() {
                   transform: "translate3d(0px, 0px, 0px)",
                 }}
               >
-                <a
-                  href="product-category/gadgets-and-accessories"
+                <Link
+                  to="/product-category"
                   className="slick-slide slick-current slick-active"
                   data-slick-index={0}
                   aria-hidden="false"
@@ -42,9 +44,9 @@ function Category() {
                       <h6>Gadgets and Accessories</h6>
                     </div>
                   </div>
-                </a>
+                </Link>
                 <a
-                  href="product-category/daily-accessories"
+                  href=""
                   className="slick-slide slick-active"
                   data-slick-index={1}
                   aria-hidden="false"
@@ -63,7 +65,7 @@ function Category() {
                   </div>
                 </a>
                 <a
-                  href="product-category/toys-novelties"
+                  href=""
                   className="slick-slide slick-active"
                   data-slick-index={2}
                   aria-hidden="false"
@@ -82,7 +84,7 @@ function Category() {
                   </div>
                 </a>
                 <a
-                  href="product-category/mother-baby"
+                  href=""
                   className="slick-slide slick-active"
                   data-slick-index={3}
                   aria-hidden="false"
@@ -101,7 +103,7 @@ function Category() {
                   </div>
                 </a>
                 <a
-                  href="product-category/hotsale"
+                  href=""
                   className="slick-slide slick-active"
                   data-slick-index={4}
                   aria-hidden="false"
@@ -120,7 +122,7 @@ function Category() {
                   </div>
                 </a>
                 <a
-                  href="product-category/kitchen-dining"
+                  href=""
                   className="slick-slide slick-active"
                   data-slick-index={5}
                   aria-hidden="false"
@@ -139,7 +141,7 @@ function Category() {
                   </div>
                 </a>
                 <a
-                  href="product-category/kitchen-dining"
+                  href=""
                   className="slick-slide slick-active"
                   data-slick-index={5}
                   aria-hidden="false"
@@ -158,7 +160,7 @@ function Category() {
                   </div>
                 </a>
                 <a
-                  href="product-category/kitchen-dining"
+                  href=""
                   className="slick-slide slick-active"
                   data-slick-index={5}
                   aria-hidden="false"

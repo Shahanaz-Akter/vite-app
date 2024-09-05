@@ -1,7 +1,7 @@
-import React from "react";
-import "./Support.css";
+import React from 'react';
+import './Support.css';
 
-import MegaMenu from "../MegaMenu/megaMenu";
+import MegaMenu from '../MegaMenu/megaMenu'
 
 function Support() {
   return <>

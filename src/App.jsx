@@ -1,23 +1,29 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import viteLogo from "/vite.svg";
 // import './App.css'
-import Navbar from './Components/Navbar/Navbar';
-import Asidebar from './Components/Asidebar/Asidebar';
-import Home from './Components/Pages/Home';
-import Support from './Components/Support/Support';
-import Footer from './Components/Footer/Footer';
 
+import MainPage from "./Components/Pages/MainPage";
+import Cart from "./Components/Cart/Cart";
+import NoProductCart from "./Components/Cart/NoProduct";
+import AllProduct from "./Components/Product/AllProduct";
+import ProductDetails from "./Components/Product/ProductDetails";
+import AllCategory from "./Components/Category/AllCategory";
 
 function App() {
   return (
-    <>
-      {/* All Components will be here one by one*/}
-      <Navbar />
-      <Asidebar />
-      <Home />
-      <Support />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+
+        <Route path="/" element={<MainPage />} />
+        <Route path="/all-product" element={<AllProduct />} />
+        <Route path="/product-details" element={<ProductDetails />} />
+        <Route path="/product-category" element={<AllCategory />} />
+        <Route path="/product-cart" element={<Cart />} />
+        <Route path="/empty-cart" element={<NoProductCart />} />
+
+      </Routes>
+    </Router>
   );
 }
 

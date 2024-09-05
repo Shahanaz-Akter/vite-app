@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./MegaMenu.css";
+import './MegaMenu.css';
 
 function MegaMenu() {
   return (

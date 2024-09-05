@@ -1,5 +1,5 @@
-import React from "react";
-import "./Product.css";
+import React from 'react';
+import './Product.css';
 
 function Product() {
   // const [isLoading, setIsLoading] = useState(false);
@@ -118,7 +118,7 @@ function Product() {
             <div className="col">
               <div className="product-card shadow-lg">
                 <div className="product-media">
-                  <a className="product-image" href="product/fish-scale">
+                  <a className="product-image" href="">
                     <img loading="lazy" src="p4.jpg" alt="product" />
                   </a>
                   <div className="badge bg-danger position-absolute zindex-2">
@@ -244,7 +244,7 @@ function Product() {
             <div className="col">
               <div className="product-card shadow-lg">
                 <div className="product-media">
-                  <a className="product-image" href="product/11324">
+                  <a className="product-image" href="">
                     <img loading="lazy" src="p4.jpg" alt="product" />
                   </a>
                   <div className="badge bg-danger position-absolute zindex-2">
@@ -276,7 +276,7 @@ function Product() {
             <div className="col">
               <div className="product-card shadow-lg">
                 <div className="product-media">
-                  <a className="product-image" href="product/11302">
+                  <a className="product-image" href="">
                     <img loading="lazy" src="p1.jpg" alt="product" />
                   </a>
                   <div className="badge bg-danger position-absolute zindex-2">
@@ -285,7 +285,7 @@ function Product() {
                 </div>
                 <div className="product-content">
                   <h6 className="product-name">
-                    <a href="product/11302">
+                    <a href="">
                       Silicone Waterproof Shoe Covers | Rain Shoe Covers
                     </a>
                   </h6>

@@ -1,8 +1,10 @@
-import React from "react";
-import "./Navbar.css";
-import NavLogo from "../Assets/logo.png";
+import React from 'react';
+import {Link} from 'react-router-dom';
 
-import MegaMenu from "../MegaMenu/megaMenu";
+import './Navbar.css';
+import NavLogo from '../Assets/logo.png';
+
+import MegaMenu from '../MegaMenu/megaMenu';
 
 function Navbar() {
   return (
@@ -31,16 +33,15 @@ function Navbar() {
                     alt="Online Shopping In Bangladesh With Home Delivery"
                   />
                 </a>
-                <button className="header-src">
-                  <a
-                    href=""
-                    className="header-widget header-cart"
-                    title="Cartlist"
-                  >
+
+                <div className="header-src">
+                  <a href="" className="header-widget header-cart"
+                    title="Cartlist">
                     <i className="fas fa-shopping-basket" />
                     <sup>3</sup>
                   </a>
-                </button>
+                </div>
+
               </div>
               <a className="header-logo" href="">
                 <img
@@ -62,8 +63,8 @@ function Navbar() {
               </form>
               <div className="header-widget-group">
                 <div wire:id="B97cIsrpON3JuyjCifGi">
-                  <a
-                    href=""
+                  <Link
+                    to="/product-cart"
                     className="header-widget header-cart"
                     title="Cartlist"
                   >
@@ -74,7 +75,7 @@ function Navbar() {
                       total price
                       <small>0.00</small>
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 {/* Livewire Component wire-end:B97cIsrpON3JuyjCifGi */}
               </div>
