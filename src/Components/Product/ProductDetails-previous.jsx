@@ -10,9 +10,11 @@ function ProductDetails() {
       {/* All Categories*/}
 
       <div>
+        
         <section className="inner-section mb-5 mt-2">
           <div className="container">
             <div className="row">
+
               <div className="col-lg-5">
                 <div className="details-gallery">
                   <ul
@@ -41,7 +43,7 @@ function ProductDetails() {
                           tabIndex={0}
                         >
                           <img
-                            src="https://aladinshopbd.com/storage/25/646e072883a8a.jpg"
+                            src="cate1.jpg"
                             alt=""
                           />
                         </li>
@@ -52,6 +54,7 @@ function ProductDetails() {
               </div>
 
               <div className="col-lg-7">
+
                 <div className="details-content ">
                   <h4 className="details-name">
                     shoe Heel Protectors | Silicone | 1 pair
@@ -69,15 +72,19 @@ function ProductDetails() {
                   </div>
                   <div className="mb-2"></div>
                   <div className="details-action-group mb-2">
-                    {/* bg-primary */}
-                    {/* style={{ background: "#BE0203" }} */}
                     <button
-                      className="btn-jump btn btn-block w-100  text-white border-0 p-2"
-                      style={{ background: "#119744" }}
-                      onclick="addToCart(9,'Plastic Waterproof Underwater Pouch Bag for Mobile Phones',120.00)"
-                      wire:click="orderNow(9)"
+                      className="btn-jump btn btn-primary  bg-primary btn-block w-100  text-white border-0 p-2"
+                      onclick="addToCart(25,'shoe Heel Protectors | Silicone | 1 pair',390.00)"
+                      wire:click="orderNow(25)"
                     >
                       <i className="fas fa-shopping-basket" /> অর্ডার করুন{" "}
+                    </button>
+                    <button
+                      wire:click="addToCart(25)"
+                      onclick="addToCart(25,'shoe Heel Protectors | Silicone | 1 pair',390.00)"
+                      className="btn btn-info bg-info text-white border-0 p-2"
+                    >
+                      <i className="fas fa-shopping-cart" /> কার্টে যোগ করুন
                     </button>
                   </div>
                   <a
@@ -202,7 +209,7 @@ function ProductDetails() {
                   <div className="details-list-group">
                     <label className="details-list-title">tags:</label>
                     <div className="details-tag-list d-inline-block">
-                      <a href="https://aladinshopbd.com/product-category/daily-accessories">
+                      <a href="">
                         <span className="badge bg-success display-1 mr-2">
                           Daily Accessories
                         </span>
@@ -216,9 +223,12 @@ function ProductDetails() {
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
+
+
 
         <section className="inner-section mb-5 product-details-content">
           <div className="container">
@@ -227,7 +237,7 @@ function ProductDetails() {
                 <ul className="nav nav-tabs justify-content-start">
                   <li>
                     <a
-                      href="#tab-desc"
+                      href=""
                       className="tab-link active"
                       data-bs-toggle="tab"
                     >
@@ -236,7 +246,7 @@ function ProductDetails() {
                   </li>
                   <li>
                     <a
-                      href="#tab-spec"
+                      href=""
                       className="tab-link"
                       data-bs-toggle="tab"
                     >
@@ -245,7 +255,7 @@ function ProductDetails() {
                   </li>
                   <li>
                     <a
-                      href="#tab-review"
+                      href=""
                       className="tab-link"
                       data-bs-toggle="tab"
                     >
@@ -258,65 +268,44 @@ function ProductDetails() {
                   className="tab-pane fade active show p-3 bg-white"
                   id="tab-desc"
                 >
-                  <div>
-                    <strong> Product Name:</strong>
-                    Plastic Waterproof Underwater Pouch Bag for
-                    Mobile Phones (Multicolor)
-                  </div>
-                  <div><strong> Product Type:</strong> Pouch Bag</div>
-                  <div>
-                    <strong>Specifications:</strong>
-                    Full protection lightweight TPU casing with dual swivel lock
-                    and sealable closure clips safeguard your device against
-                    water, snow, dust, and dirt. Superior water-resistant
-                    protection up to 98 feet (30 meters). Offers waterproof/
-                    snowproof / dirt-proof protection for your device while
-                    maintaining full touch screen functionality.
-                    <strong>Package Includes:</strong>1 x Plastic Waterproof
-                    Underwater Pouch Bag
-                  </div>
-
+                  Product Name: Plastic Waterproof Underwater Pouch Bag for
+                  Mobile Phones (Multicolor) Product Type: Pouch Bag
+                  <strong>Specifications:</strong>
+                  Full protection lightweight TPU casing with dual swivel lock
+                  and sealable closure clips safeguard your device against
+                  water, snow, dust, and dirt. Superior water-resistant
+                  protection up to 98 feet (30 meters). Offers waterproof/
+                  snowproof / dirt-proof protection for your device while
+                  maintaining full touch screen functionality.
+                  <strong>Package Includes:</strong>1 x Plastic Waterproof
+                  Underwater Pouch Bag
                 </div>
-
                 <div className="tab-pane fade p-3 bg-white" id="tab-spec">
                   <ul>
+                    {" "}
                     <li>
+                      {" "}
                       আপনার যত প্রশ্ন আছে তা বর্ননার সাথে মিলিয়ে অথবা আমাদের কাছ
                       থেকে জেনে পন্য অর্ডার করুন।
                     </li>
-                    <li>
-                      ছবি এবং বর্ণনার সাথে পন্যের মিল থাকলে পণ্য ফেরত নেয়া হবে
-                      না ।
-                    </li>
-                    <li>
-                      তবে আপনি চাইলে আপনার গ্রহন করা পন্যের সম মুল্যের কি বা
-                      বেশি মুল্যের পণ্য নিতে পারবেন (যে টাকা বেশি হবে তা প্রদান
-                      করতে হবে ) ।
-                    </li>
+                    <li>ছবি এবং বর্ণনার সাথে পন্যের মিল থাকলে পণ্য ফেরত নেয়া হবে না ।</li>
+                    <li>তবে আপনি চাইলে আপনার গ্রহন করা পন্যের সম মুল্যের কি বা বেশি মুল্যের পণ্য নিতে পারবেন (যে টাকা বেশি হবে তা প্রদান করতে হবে ) ।</li>
                     <li>কম মুল্যের পণ্য নেয়া যাবে না ।</li>
                     <li>পণ্য আনা নেয়ার খরচ আপনাকে দিতে হবে।</li>
-                    <li>
-                      যে সকল পন্যে ওয়ারেন্টি আছে তার ওয়ারেন্টি সার্ভিস আমরা
-                      প্রদান করবো।তবে কিছু কিছু ক্ষেত্রে পন্যের ব্রান্ড আপনাকে
-                      সার্ভিস প্রদান করবে তবে সে ক্ষেত্রে আপনার নিকটস্থ সার্ভিস
-                      পয়েন্ট থেকে সার্ভিস নিতে পারবেন। পণ্য সার্ভিস করতে যাওয়া
-                      আসা বা পাঠানো এবং রিটার্ন করার খরজ আপনাকে বহন করতে হবে।
-                    </li>
+                    <li>যে সকল পন্যে ওয়ারেন্টি আছে তার ওয়ারেন্টি সার্ভিস আমরা প্রদান করবো।তবে কিছু কিছু ক্ষেত্রে পন্যের ব্রান্ড আপনাকে সার্ভিস প্রদান করবে তবে সে ক্ষেত্রে আপনার নিকটস্থ সার্ভিস পয়েন্ট থেকে সার্ভিস নিতে পারবেন।
+                    পণ্য সার্ভিস করতে যাওয়া আসা বা পাঠানো এবং রিটার্ন করার খরজ আপনাকে বহন করতে হবে।</li>
                   </ul>
                 </div>
-
-                <div className="tab-pane fade p-3 bg-white" id="tab-review">
-                  <ul>
-                    <li>Review 1</li>
-                    <li>Review 2</li>
-                  </ul>
-                </div>
+                <div
+                  className="tab-pane fade p-3 bg-white"
+                  id="tab-review"
+                ></div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Related products */}
+        {/* Related product */}
         <section className="section recent-part mb-4">
           <div className="container mb-3">
             <div className="row">
@@ -327,6 +316,7 @@ function ProductDetails() {
           </div>
           <div className="container">
             <div className="row">
+
               <div className="col-12 col-md-2 col-lg-2 col-xl-2 mb-2">
                 <img src="/p1.jpg" alt="" />
               </div>
@@ -338,9 +328,13 @@ function ProductDetails() {
               <div className="col-12 col-md-2 col-lg-2 col-xl-2 mb-2">
                 <img src="/p3.jpg" alt="" />
               </div>
+             
+
             </div>
           </div>
         </section>
+
+
       </div>
       <Support />
       <Footer />

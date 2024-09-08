@@ -96,10 +96,24 @@
 
     <style>
         :root {
-            /* --primary: #d7282b !important; */
+            /* --primary: #d7282b !important; 
+           color: #119744; 
+            --primary: #be0203; 
+             --primary-hover: red;
+            --secondary: #e01b49;
+            --secondary-hover: #9828c7;
+            --text2: white;
+            --text: black;  */
 
-
+            --primary: #119744;
+            --primary-hover: green;
+            --secondary: #119744;
+            ;
+            --secondary-hover: #9828c7;
+            --text2: white;
+            --text: black;
         }
+
 
         .navbar-part {
             background: var(--primary);
@@ -136,8 +150,26 @@
                 width: 100%;
             }
         }
-    </style>
 
+        .btn-jump {
+            animation: pulse 1100ms infinite;
+            font-size: 1.5em;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(.9);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(.8);
+            }
+        }
+    </style>
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1193.0" data-gr-ext-installed="">
