@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
@@ -11,14 +12,14 @@ function Footer() {
 
             <div className="col-sm-6 col-xl-3">
               <div className="footer-widget">
-                <a className="footer-logo" href="">
+                <Link className="footer-logo" to="/">
                   <img
                     loading="lazy"
                     src="logos.PNG"
                     alt="logo"
                     className="w-50"
                   />
-                </a>
+                </Link>
                 <p className="footer-desc d-lg-block d-none"></p>
               </div>
             </div>
@@ -64,6 +65,7 @@ function Footer() {
                 </div>
               </div>
             </div>
+
             <div className="col-sm-6 col-xl-3 d-lg-block d-none">
               <div className="footer-widget">
                 <h3 className="footer-title">Our Social Page</h3>
@@ -95,8 +97,10 @@ function Footer() {
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
+
         <div className="row mt-5">
           <div className="col-12">
           {/* bg-success */}
@@ -112,6 +116,7 @@ function Footer() {
             </div>
           </div>
         </div>
+
       </footer>
     </>
   );
