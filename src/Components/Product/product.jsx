@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Product.css';
 
 function Product() {
@@ -19,12 +20,13 @@ function Product() {
 
         <div className="container">
           <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6">
+
             <div className="col">
               <div className="product-card shadow-lg">
                 <div className="product-media">
-                  <a className="product-image" href="#">
+                  <Link className="product-image" to="/product-details">
                     <img loading="lazy" src="p1.jpg" alt="product" />
-                  </a>
+                  </Link>
                   <div className="badge bg-danger position-absolute zindex-2">
                     <span className="red">-45 %</span>
                   </div>
@@ -51,12 +53,13 @@ function Product() {
                 </div>
               </div>
             </div>
+
             <div className="col">
               <div className="product-card shadow-lg">
                 <div className="product-media">
-                  <a className="product-image" href="#">
+                <Link className="product-image" to="/all-product">
                     <img loading="lazy" src="p2.jpg" alt="product" />
-                  </a>
+                  </Link>
                   <div className="badge bg-danger position-absolute zindex-2">
                     <span className="red">-58 %</span>
                   </div>

@@ -14,7 +14,7 @@ function Footer() {
                 <a className="footer-logo" href="">
                   <img
                     loading="lazy"
-                    src="logo.png"
+                    src="logos.PNG"
                     alt="logo"
                     className="w-50"
                   />

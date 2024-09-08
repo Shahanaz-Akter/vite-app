@@ -223,6 +223,81 @@ function ProductDetails() {
           </div>
         </section>
 
+        <section className="inner-section mb-5 product-details-content">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <ul className="nav nav-tabs justify-content-start">
+                  <li>
+                    <a
+                      href="https://aladinshopbd.com/product/plastic-waterproof-underwater-pouch-bag-for-mobile-phones#tab-desc"
+                      className="tab-link active"
+                      data-bs-toggle="tab"
+                    >
+                      পণ্যের বিস্তারিত
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://aladinshopbd.com/product/plastic-waterproof-underwater-pouch-bag-for-mobile-phones#tab-spec"
+                      className="tab-link"
+                      data-bs-toggle="tab"
+                    >
+                      ডেলিভারি এবং রিটার্ন পলিসি
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://aladinshopbd.com/product/plastic-waterproof-underwater-pouch-bag-for-mobile-phones#tab-review"
+                      className="tab-link"
+                      data-bs-toggle="tab"
+                    >
+                      Review
+                    </a>
+                  </li>
+                </ul>
+                <hr className="m-0" />
+                <div
+                  className="tab-pane fade active show p-3 bg-white"
+                  id="tab-desc"
+                >
+                  Product Name: Plastic Waterproof Underwater Pouch Bag for
+                  Mobile Phones (Multicolor) Product Type: Pouch Bag
+                  <strong>Specifications:</strong>
+                  Full protection lightweight TPU casing with dual swivel lock
+                  and sealable closure clips safeguard your device against
+                  water, snow, dust, and dirt. Superior water-resistant
+                  protection up to 98 feet (30 meters). Offers waterproof/
+                  snowproof / dirt-proof protection for your device while
+                  maintaining full touch screen functionality.
+                  <strong>Package Includes:</strong>1 x Plastic Waterproof
+                  Underwater Pouch Bag
+                </div>
+                <div className="tab-pane fade p-3 bg-white" id="tab-spec">
+                  <ul>
+                    {" "}
+                    <li>
+                      {" "}
+                      আপনার যত প্রশ্ন আছে তা বর্ননার সাথে মিলিয়ে অথবা আমাদের কাছ
+                      থেকে জেনে পন্য অর্ডার করুন।
+                    </li>
+                    <li>ছবি এবং বর্ণনার সাথে পন্যের মিল থাকলে পণ্য ফেরত নেয়া হবে না ।</li>
+                    <li>তবে আপনি চাইলে আপনার গ্রহন করা পন্যের সম মুল্যের কি বা বেশি মুল্যের পণ্য নিতে পারবেন (যে টাকা বেশি হবে তা প্রদান করতে হবে ) ।</li>
+                    <li>কম মুল্যের পণ্য নেয়া যাবে না ।</li>
+                    <li>পণ্য আনা নেয়ার খরচ আপনাকে দিতে হবে।</li>
+                    <li>যে সকল পন্যে ওয়ারেন্টি আছে তার ওয়ারেন্টি সার্ভিস আমরা প্রদান করবো।তবে কিছু কিছু ক্ষেত্রে পন্যের ব্রান্ড আপনাকে সার্ভিস প্রদান করবে তবে সে ক্ষেত্রে আপনার নিকটস্থ সার্ভিস পয়েন্ট থেকে সার্ভিস নিতে পারবেন।
+                    পণ্য সার্ভিস করতে যাওয়া আসা বা পাঠানো এবং রিটার্ন করার খরজ আপনাকে বহন করতে হবে।</li>
+                  </ul>
+                </div>
+                <div
+                  className="tab-pane fade p-3 bg-white"
+                  id="tab-review"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="section recent-part mb-4">
           <div className="container mb-3">
             <div className="row">
@@ -232,8 +307,21 @@ function ProductDetails() {
             </div>
           </div>
           <div className="container">
-            <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6">
-                <img src="" alt="" />
+            <div className="row">
+
+              <div className="col-12 col-md-2 col-lg-2 col-xl-2 mb-2">
+                <img src="/p1.jpg" alt="" />
+              </div>
+
+              <div className="col-12 col-md-2 col-lg-2 col-xl-2 mb-2">
+                <img src="/p2.jpg" alt="" />
+              </div>
+
+              <div className="col-12 col-md-2 col-lg-2 col-xl-2 mb-2">
+                <img src="/p3.jpg" alt="" />
+              </div>
+             
+
             </div>
           </div>
         </section>

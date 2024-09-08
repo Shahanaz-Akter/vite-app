@@ -22,17 +22,19 @@ function Navbar() {
               ডেলিভারি) হটলাইনঃ 01896070330
             </marquee>
             <div className="header-content">
+
               <div className="header-media-group">
                 <button className="header-user">
                   <i className="fas fa-bars" />
                 </button>
-                <a href="/">
+
+                <Link to="/">
                   <img
                     loading="lazy"
                     src="logos.PNG"
                     alt="Online Shopping In Bangladesh With Home Delivery"
                   />
-                </a>
+                </Link>
 
                 <div className="header-src">
                   <a href="" className="header-widget header-cart"
@@ -41,15 +43,16 @@ function Navbar() {
                     <sup>3</sup>
                   </a>
                 </div>
-
               </div>
-              <a className="header-logo" href="">
+
+              <Link className="header-logo" to="/">
                 <img
                   loading="lazy"
                   src="logos.PNG"
                   alt="Online Shopping In Bangladesh With Home Delivery"
                 />
-              </a>
+              </Link>
+
               <form className="header-form active" action="search">
                 <input
                   type="text"
@@ -70,7 +73,7 @@ function Navbar() {
                   >
                     {/* style={{ textDecoration: "none" }} */}
                     <i className="fas fa-shopping-basket" />
-                    <sup>3</sup>
+                    <sup>5</sup>
                     <span>
                       total price
                       <small>0.00</small>
